@@ -26,7 +26,7 @@ const data = {
   datasets: [
     {
       label: "# of Votes",
-      data: pieChartLabels.map((item) => Math.ceil(Math.random() * 10)),
+      data: pieChartLabels.map((_) => Math.ceil(Math.random() * 10)),
       backgroundColor: [
         "rgb(220 252 231)",
         "rgb(187 247 208)",
@@ -76,7 +76,7 @@ const lineChartData = {
   datasets: [
     {
       label: "First one",
-      data: labels.map((item) => Math.ceil(Math.random() * 20)),
+      data: labels.map((_) => Math.ceil(Math.random() * 20)),
       borderColor: "rgb(96 165 250)",
       backgroundColor: "rgb(96 165 250)",
       tension: 0.4,

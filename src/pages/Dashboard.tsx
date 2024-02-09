@@ -1,4 +1,3 @@
-import Sidebar from "../components/Sidebar";
 import userImg from "../assets/Rectangle 10.png";
 import UserProfileImg from "../assets/media.png";
 import fb from "../assets/facebook.png";
@@ -6,7 +5,6 @@ import twitter from "../assets/twitter.png";
 import insta from "../assets/instagram.png";
 import { LineChart, PieChart } from "../components/Chart";
 import Table from "../components/Table";
-import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 
 const Dashboard = () => {
   return (

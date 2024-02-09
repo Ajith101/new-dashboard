@@ -38,7 +38,7 @@ const columns = [
 ];
 
 const Table = () => {
-  const [users, setUsers] = useState<UserType[]>(data.userData);
+  const [users] = useState<UserType[]>(data.userData);
 
   const table = useReactTable({
     data: users,
@@ -88,7 +88,7 @@ const Table = () => {
         >
           <MdOutlineNavigateBefore />
         </button>
-        {Array.from({ length: table.getPageCount() }, (ele, index) => (
+        {Array.from({ length: table.getPageCount() }, (_, index) => (
           <button
             key={index}
             style={
