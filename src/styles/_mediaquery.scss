@@ -1,0 +1,43 @@
+@media screen and (width<=1200px) {
+  .admin-container {
+    overflow: auto;
+    .dashboard {
+      padding-left: 2rem;
+      .graph-container,
+      .user-container {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (width<=1100px) {
+  .admin-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (width<=600px) {
+  .admin-container {
+    > aside {
+      // width: 16rem;
+      .nav-bar {
+        > ul {
+          > li {
+            > a {
+              margin: 0.5rem 0 !important;
+            }
+          }
+        }
+      }
+    }
+    .dashboard {
+      .graph-container {
+        > div {
+          height: 290px;
+        }
+      }
+    }
+  }
+}

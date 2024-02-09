@@ -1,0 +1,24 @@
+@mixin flex(
+  $dir: row,
+  $justifyContent: center,
+  $alignItems: center,
+  $gap: 1rem
+) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  gap: $gap;
+}
+
+@mixin grid($col: 1fr, $gap: 1rem, $row: unset) {
+  display: grid;
+  grid-template-rows: $row;
+  grid-template-columns: $col;
+  gap: $gap;
+}
+
+@mixin square($s: 1rem) {
+  width: $s;
+  height: $s;
+}
